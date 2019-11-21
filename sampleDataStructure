@@ -1,0 +1,61 @@
+//default workout data
+
+{
+chest:[[{section:"mid",1:1},{section:"mid",2:2},{section:"mid",3:3},{section:"mid",4:4}], [{section:"upper",1:1},{section:"upper",2:2},{section:"upper", 3:3},{section:"upper", 4:4}], [{section:"low",1:1},{section:"low",2:2},{section:"low",3:3},{section:"low",4:4}], [{section:"aux",1:1},{section:"aux",2:2},{section:"aux",3:3},{section:"aux",4:4}]],
+
+legs:[[{section:"mid",1:1},{section:"mid",2:2},{section:"mid",3:3},{section:"mid",4:4}], [{section:"upper",1:1},{section:"upper",2:2},{section:"upper", 3:3},{section:"upper", 4:4}], [{section:"low",1:1},{section:"low",2:2},{section:"low",3:3},{section:"low",4:4}], [{section:"aux",1:1},{section:"aux",2:2},{section:"aux",3:3},{section:"aux",4:4}]],
+
+bicep:[[{section:"mid",1:1},{section:"mid",2:2},{section:"mid",3:3},{section:"mid",4:4}], [{section:"upper",1:1},{section:"upper",2:2},{section:"upper", 3:3},{section:"upper", 4:4}], [{section:"low",1:1},{section:"low",2:2},{section:"low",3:3},{section:"low",4:4}], [{section:"aux",1:1},{section:"aux",2:2},{section:"aux",3:3},{section:"aux",4:4}]],
+
+tricep:[[{section:"mid",1:1},{section:"mid",2:2},{section:"mid",3:3},{section:"mid",4:4}], [{section:"upper",1:1},{section:"upper",2:2},{section:"upper", 3:3},{section:"upper", 4:4}], [{section:"low",1:1},{section:"low",2:2},{section:"low",3:3},{section:"low",4:4}], [{section:"aux",1:1},{section:"aux",2:2},{section:"aux",3:3},{section:"aux",4:4}]],
+
+back:[[{section:"mid",1:1},{section:"mid",2:2},{section:"mid",3:3},{section:"mid",4:4}], [{section:"upper",1:1},{section:"upper",2:2},{section:"upper", 3:3},{section:"upper", 4:4}], [{section:"low",1:1},{section:"low",2:2},{section:"low",3:3},{section:"low",4:4}], [{section:"aux",1:1},{section:"aux",2:2},{section:"aux",3:3},{section:"aux",4:4}]],
+
+shoulder:[[{section:"mid",1:1},{section:"mid",2:2},{section:"mid",3:3},{section:"mid",4:4}], [{section:"upper",1:1},{section:"upper",2:2},{section:"upper", 3:3},{section:"upper", 4:4}], [{section:"low",1:1},{section:"low",2:2},{section:"low",3:3},{section:"low",4:4}], [{section:"aux",1:1},{section:"aux",2:2},{section:"aux",3:3},{section:"aux",4:4}]]
+
+}
+
+
+var sampleArray = {chest:[[{1:1},{2:2},{3:3},{4:4}], [{1:1},{2:2},{3:3},{4:4}], [{1:1},{2:2},{3:3},{4:4}],[{1:1},{2:2},{3:3},{4:4}]]}
+
+//example array in default
+
+mid:[{reps:5, description: "standardbenchpress", image: "sampleimageurl", video:"linktoextrayoutube"}, {reps:5, description: "standardbenchpress", image: "sampleimageurl", video:"linktoextrayoutube"}, {reps:5, description: "standardbenchpress", image: "sampleimageurl", video:"linktoextrayoutube"}]
+
+
+arrayShuffler = function(array){
+
+	for(let i = array.length - 1; i > 0; i--){
+  		const j = Math.floor(Math.random() * i)
+  		const temp = array[i]
+  		array[i] = array[j]
+  		array[j] = temp
+	}
+}
+
+week array = ["chest", "legs"]
+
+dArray = ["bicep", "tricep", "back", "shoulder"] push both halves into week array as array as ["bicep", "tricep"][ "back", "shoulder"]
+
+arrayShuffler(dArray);
+weekArray.push(dArray.slice(0,2))
+weekArray.push(dArray.slice(2,4))
+
+updated week array = ["chest", "legs", ["bicep", "tricep"], [ "back", "shoulder"]]
+
+shuffle update week array = ["chest", ["bicep", "tricep"], "legs", [ "back", "shoulder"]]
+
+// if week array item.length === 2 then array[item][0] execute function arrayitem[1] function
+
+//looping through adding item use for loop index to run function to add from object list
+var toLoopThrough = Object.keys(back.back);
+toLoopThrough.forEach(item=>{newArr.push(back.back.item)});
+
+//create random 
+
+defaultData.weekArray[0].forEach(function(item){for (let i=0;i<item.length;i++){week[i].push(item)}
+
+
+
+for array shuffling 
+
